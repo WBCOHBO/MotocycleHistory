@@ -1,0 +1,97 @@
+/* demo page styles */
+body {
+    font-family: "微軟正黑體",Arial;
+}
+/* main menu styles */
+
+.nav,.nav ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.nav {
+    position:relative;
+}
+
+.nav ul {
+    height:0;
+    left:0;
+    overflow:hidden;
+    position:absolute;
+    top:105%;
+}
+
+.nav li {
+    float:left;
+    position:relative;
+}
+
+.nav li a {
+    -moz-transition:0.5s;
+    -o-transition:0.5s;
+    -webkit-transition:0.5s;
+    background-color:#000000;
+    border:1px solid #000000;
+    color:#FFF;
+    display:block;
+    font-size:105%;
+    line-height:80%;
+    padding:5px 20px;
+    text-decoration:none;
+    transition:0.5s;
+}
+
+.nav li:hover > a {
+    background:#444444;
+    border-color:#444444;
+    color:#fff;
+}
+
+.nav li:hover ul.subs {
+    height:auto;
+    width:258%;
+}
+
+.nav ul li {
+    -moz-transition:0.5s;
+    -o-transition:0.5s;
+    -webkit-transition:0.5s;
+    opacity:10;
+    transition:0.5s;
+    width:100%;
+}
+
+.nav li ul li {
+    -moz-transition-delay:0s;
+    -o-transition-delay:0s;
+    -webkit-transition-delay:0s;
+    transition-delay:0s;
+}
+
+.nav li:hover ul li {
+    opacity:1;
+    -moz-transition-delay:0.5s;
+    -o-transition-delay:0.5s;
+    -webkit-transition-delay:0.5s;
+    transition-delay:0.5s;
+}
+
+.nav ul li a {
+    background:#444444;
+    border-color:#444444;
+    color:#fff;
+    line-height:1px;
+    -moz-transition:0.5s;
+    -o-transition:0.5s;
+    -webkit-transition:0.5s;
+    transition:0.5s;
+}
+
+.nav li:hover ul li a {
+    line-height:200%;
+}
+
+.nav ul li a:hover {
+    background:#000000;
+}
