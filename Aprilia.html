@@ -21,8 +21,7 @@
     <link rel="stylesheet" type="text/css" href="css,js/src-2/default.css">
     <link rel="stylesheet" type="text/css" href="css,js/src-2/cntl.css">
     <style media="screen">
-        body
-        {
+        body {
             margin: 0;
             padding: 0;
             background: url(Picture/European/Aprilia/Aprilia_logo.jpg) center center fixed no-repeat;
@@ -30,9 +29,9 @@
             background-size: cover;
         }
     </style>
-  </head>
+</head>
 
-  <body>
+<body>
     <!--navbar -->
     <div class="w3-top">
         <nav class="navbar navbar-inverse">
@@ -47,14 +46,14 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                      <li class="type"><a href="BMW.html">BMW</a></li>
-                      <li class="type"><a href="Ducati.html">Ducati</a></li>
-                      <li class="type"><a href="Aprilia.html">Aprilia</a></li>
-                      <li class="type"><a href="Vespa.html">Vespa</a></li>
-                      <li class="type"><a href="MVAgusta.html">MV Agusta</a></li>
-                      <li class="type"><a href="KTM.html">KTM</a></li>
-                      <li class="type"><a href="Triumph.html">Triumph</a></li>
-                      <li class="type"><a href="Norton.html">Norton</a></li>
+                        <li class="type"><a href="BMW.html">BMW</a></li>
+                        <li class="type"><a href="Ducati.html">Ducati</a></li>
+                        <li class="type"><a href="Aprilia.html">Aprilia</a></li>
+                        <li class="type"><a href="Vespa.html">Vespa</a></li>
+                        <li class="type"><a href="MVAgusta.html">MV Agusta</a></li>
+                        <li class="type"><a href="KTM.html">KTM</a></li>
+                        <li class="type"><a href="Triumph.html">Triumph</a></li>
+                        <li class="type"><a href="Norton.html">Norton</a></li>
                     </ul>
                 </div>
             </div>
@@ -69,7 +68,7 @@
           <span class="cntl-bar-fill"></span>
             </span>
             <div class="cntl-states">
-<br><br>
+                <br><br>
                 <div class="cntl-state">
                     <div class="cntl-content">
                         <p>Aprilia第一台摩托車出產，金與藍配色的50cc原型車，第一批的Aprilia摩托車的訴求是經濟、輕量並且好操控，適合各種年齡層和男女老少。而當時有三種車款分別名為Colibri、Daniela、Packi，這三種車款在當時的歐洲市場擁有很好的市佔率和銷量。</p>
@@ -152,24 +151,71 @@
     </script>
     <script type="text/javascript" src="css,js/src-2/jquery.cntl.js"></script>
     <script type="text/javascript">
-        $(document).ready
-        (
-          function(e)
-          {
-              $('.cntl').cntl
-              (
-                {
-                  revealbefore: 300,
-                  anim_class: 'cntl-animate',
-                  onreveal: function(e)
-                  {
-                      console.log(e);
-                  }
-                }
-              );
-          }
+        $(document).ready(
+            function(e) {
+                $('.cntl').cntl({
+                    revealbefore: 300,
+                    anim_class: 'cntl-animate',
+                    onreveal: function(e) {
+                        console.log(e);
+                    }
+                });
+            }
         );
     </script>
-  </body>
 
-  </html>
+    <!--Top Button-->
+    <script>
+        (function() {
+            $("body").append("<img id='goTopButton' style='display: none; z-index: 5; cursor: pointer;' title='回到頂端'/>");
+            var img = "http://1.bp.blogspot.com/-zMfrIkyhlVs/Uh7FePoKU8I/AAAAAAAAHnA/WA0H_vbWAWc/s1600/go-top.png",
+                locatioin = 1 / 2, // 按鈕出現在螢幕的高度
+                right = 10, // 距離右邊 px 值
+                opacity = 3, // 透明度
+                speed = 500, // 捲動速度
+                $button = $("#goTopButton"),
+                $body = $(document),
+                $win = $(window);
+            $button.attr("src", img);
+            $button.on({
+                mouseover: function() {
+                    $button.css("opacity", 1);
+                },
+                mouseout: function() {
+                    $button.css("opacity", opacity);
+                },
+                click: function() {
+                    $("html, body").animate({
+                        scrollTop: 0
+                    }, speed);
+                }
+            });
+            window.goTopMove = function() {
+                var scrollH = $body.scrollTop(),
+                    winH = $win.height(),
+                    css = {
+                        "top": winH * locatioin + "px",
+                        "position": "fixed",
+                        "right": right,
+                        "opacity": opacity
+                    };
+                if (scrollH > 20) {
+                    $button.css(css);
+                    $button.fadeIn("slow");
+                } else {
+                    $button.fadeOut("slow");
+                }
+            };
+            $win.on({
+                scroll: function() {
+                    goTopMove();
+                },
+                resize: function() {
+                    goTopMove();
+                }
+            });
+        })();
+    </script>
+</body>
+
+</html>

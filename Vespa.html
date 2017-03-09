@@ -21,8 +21,7 @@
     <link rel="stylesheet" type="text/css" href="css,js/src-2/default.css">
     <link rel="stylesheet" type="text/css" href="css,js/src-2/cntl.css">
     <style media="screen">
-        body
-        {
+        body {
             margin: 0;
             padding: 0;
             background: url(Picture/European/Vespa/Vespa_logo.jpg) center center fixed no-repeat;
@@ -30,9 +29,9 @@
             background-size: cover;
         }
     </style>
-  </head>
+</head>
 
-  <body>
+<body>
     <!--navbar -->
     <div class="w3-top">
         <nav class="navbar navbar-inverse">
@@ -47,14 +46,14 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                      <li class="type"><a href="BMW.html">BMW</a></li>
-                      <li class="type"><a href="Ducati.html">Ducati</a></li>
-                      <li class="type"><a href="Aprilia.html">Aprilia</a></li>
-                      <li class="type"><a href="Vespa.html">Vespa</a></li>
-                      <li class="type"><a href="MVAgusta.html">MV Agusta</a></li>
-                      <li class="type"><a href="KTM.html">KTM</a></li>
-                      <li class="type"><a href="Triumph.html">Triumph</a></li>
-                      <li class="type"><a href="Norton.html">Norton</a></li>
+                        <li class="type"><a href="BMW.html">BMW</a></li>
+                        <li class="type"><a href="Ducati.html">Ducati</a></li>
+                        <li class="type"><a href="Aprilia.html">Aprilia</a></li>
+                        <li class="type"><a href="Vespa.html">Vespa</a></li>
+                        <li class="type"><a href="MVAgusta.html">MV Agusta</a></li>
+                        <li class="type"><a href="KTM.html">KTM</a></li>
+                        <li class="type"><a href="Triumph.html">Triumph</a></li>
+                        <li class="type"><a href="Norton.html">Norton</a></li>
                     </ul>
                 </div>
             </div>
@@ -77,7 +76,7 @@
                     <div class="cntl-image"><img src="Picture/European/Vespa/1947.jpg"></div>
                     <div class="cntl-icon cntl-center">1947</div>
                 </div>
-              <br><br>
+                <br><br>
                 <div class="cntl-state">
                     <div class="cntl-content">
                         <p>VS5是傳奇150 GS系列中的最後一批，首批於1955年產出引擎及外觀均有陸陸續續的改良，編號為VS2至VS5。VS5與VS2相同，前斜板周圍有不銹鋼飾條，鋼鑄的整合式龍頭把手可以隱藏住各項控制拉索，扇形時速表也是別具特色，應法規要求後燈組追加煞車燈功能，周圍增加鍍鉻飾條，前擋泥板也展現煥然一新的設計。煞車系統與引擎整體而言也有大幅提升，配備新款化油器及汽缸頭，不僅馬力如虎添翼，車輛駕駛起來更順暢也更靈活。150 GS VS5車型產於1959年至1962年。</p>
@@ -88,7 +87,8 @@
 
                 <div class="cntl-state">
                     <div class="cntl-content">
-                        <p>Vespa 50是最受年輕人歡迎的Vespa，它造型搶眼、容易騎乘，同時又洋溢著Vespa大車系列擁有的獨特風格。在1963年首次推出以來，Piaggio即以「青春、摩登，無須駕照」作為它的宣傳口號。1963年的義大利交通法規實施之後，Vespa 50不須申請牌照，只要年滿14歲的青少年，騎乘Vespa 50也不需要持有駕照。Vespa 50是Corradino D’Ascanio設計的最後一款速克達，引擎採用全新設計，汽缸捨棄水平衝程，改以45度配置。Vespa 50是Vespa歷史中的重要里程碑，從1964年到目前為止，有超過3百萬輛Vespa 50出廠。</p>
+                        <p>Vespa 50是最受年輕人歡迎的Vespa，它造型搶眼、容易騎乘，同時又洋溢著Vespa大車系列擁有的獨特風格。在1963年首次推出以來，Piaggio即以「青春、摩登，無須駕照」作為它的宣傳口號。1963年的義大利交通法規實施之後，Vespa 50不須申請牌照，只要年滿14歲的青少年，騎乘Vespa 50也不需要持有駕照。Vespa 50是Corradino D’Ascanio設計的最後一款速克達，引擎採用全新設計，汽缸捨棄水平衝程，改以45度配置。Vespa
+                            50是Vespa歷史中的重要里程碑，從1964年到目前為止，有超過3百萬輛Vespa 50出廠。</p>
                     </div>
                     <div class="cntl-image"><img src="Picture/European/Vespa/1963.jpg"></div>
                     <div class="cntl-icon cntl-center">1963</div>
@@ -135,24 +135,71 @@
     </script>
     <script type="text/javascript" src="css,js/src-2/jquery.cntl.js"></script>
     <script type="text/javascript">
-        $(document).ready
-        (
-          function(e)
-          {
-              $('.cntl').cntl
-              (
-                {
-                  revealbefore: 300,
-                  anim_class: 'cntl-animate',
-                  onreveal: function(e)
-                  {
-                      console.log(e);
-                  }
-                }
-              );
-          }
+        $(document).ready(
+            function(e) {
+                $('.cntl').cntl({
+                    revealbefore: 300,
+                    anim_class: 'cntl-animate',
+                    onreveal: function(e) {
+                        console.log(e);
+                    }
+                });
+            }
         );
     </script>
-  </body>
 
-  </html>
+    <!--Top Button-->
+    <script>
+        (function() {
+            $("body").append("<img id='goTopButton' style='display: none; z-index: 5; cursor: pointer;' title='回到頂端'/>");
+            var img = "http://1.bp.blogspot.com/-zMfrIkyhlVs/Uh7FePoKU8I/AAAAAAAAHnA/WA0H_vbWAWc/s1600/go-top.png",
+                locatioin = 1 / 2, // 按鈕出現在螢幕的高度
+                right = 10, // 距離右邊 px 值
+                opacity = 3, // 透明度
+                speed = 500, // 捲動速度
+                $button = $("#goTopButton"),
+                $body = $(document),
+                $win = $(window);
+            $button.attr("src", img);
+            $button.on({
+                mouseover: function() {
+                    $button.css("opacity", 1);
+                },
+                mouseout: function() {
+                    $button.css("opacity", opacity);
+                },
+                click: function() {
+                    $("html, body").animate({
+                        scrollTop: 0
+                    }, speed);
+                }
+            });
+            window.goTopMove = function() {
+                var scrollH = $body.scrollTop(),
+                    winH = $win.height(),
+                    css = {
+                        "top": winH * locatioin + "px",
+                        "position": "fixed",
+                        "right": right,
+                        "opacity": opacity
+                    };
+                if (scrollH > 20) {
+                    $button.css(css);
+                    $button.fadeIn("slow");
+                } else {
+                    $button.fadeOut("slow");
+                }
+            };
+            $win.on({
+                scroll: function() {
+                    goTopMove();
+                },
+                resize: function() {
+                    goTopMove();
+                }
+            });
+        })();
+    </script>
+</body>
+
+</html>
