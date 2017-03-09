@@ -1,16 +1,18 @@
 body {
-    font-family: "微軟正黑體",Arial;
+    font-family: "微軟正黑體", Arial;
 }
+
 .full-screen {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-.item>a{
-  display: block;
-  height: 100%;
+
+.item>a {
+    display: block;
+    height: 100%;
 }
-h1
-{
-  color:white;
+
+h1 {
+    color: white;
 }
